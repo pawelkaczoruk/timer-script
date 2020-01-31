@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -13,17 +13,22 @@ h1 {
 
 .center {
   padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-  .card {
-    display: grid;
-    place-content: center;
-    border-radius: 0.4em;
-    background: #5c759e;
-    width: 250px;
-    height: 70px;
-  }
+.center .card {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-radius: 0.4em;
+  background: #5c759e;
+  width: 250px;
+  height: 70px;
 }
 
 #timer {
@@ -49,3 +54,4 @@ h2 {
   border: 3px solid #707070;
   padding: 1em 1em;
 }
+/*# sourceMappingURL=styles.css.map */
